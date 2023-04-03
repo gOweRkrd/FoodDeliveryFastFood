@@ -54,14 +54,78 @@
 		5047C7C429DA9FEF00C526D8 /* FoodDeliveryFastFood */ = {
 			isa = PBXGroup;
 			children = (
-				5047C7C529DA9FEF00C526D8 /* AppDelegate.swift */,
-				5047C7C729DA9FEF00C526D8 /* SceneDelegate.swift */,
-				5047C7C929DA9FEF00C526D8 /* ViewController.swift */,
-				5047C7CE29DA9FF100C526D8 /* Assets.xcassets */,
-				5047C7D029DA9FF100C526D8 /* LaunchScreen.storyboard */,
-				5047C7D329DA9FF100C526D8 /* Info.plist */,
+				5047C7DB29DAA57200C526D8 /* App */,
+				5047C7DC29DAA5F100C526D8 /* Module */,
+				5047C7DD29DAA61B00C526D8 /* Network */,
+				5047C7DE29DAA62900C526D8 /* Extension */,
+				5047C7DF29DAA64800C526D8 /* Resources */,
 			);
 			path = FoodDeliveryFastFood;
+			sourceTree = "<group>";
+		};
+		5047C7DB29DAA57200C526D8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5047C7D329DA9FF100C526D8 /* Info.plist */,
+				5047C7C529DA9FEF00C526D8 /* AppDelegate.swift */,
+				5047C7C729DA9FEF00C526D8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5047C7DC29DAA5F100C526D8 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5047C7E029DAA69A00C526D8 /* Categories */,
+				5047C7E129DAA6BB00C526D8 /* Feed */,
+				5047C7E229DAA6CD00C526D8 /* TabBar */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5047C7DD29DAA61B00C526D8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5047C7DE29DAA62900C526D8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5047C7DF29DAA64800C526D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5047C7CE29DA9FF100C526D8 /* Assets.xcassets */,
+				5047C7D029DA9FF100C526D8 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5047C7E029DAA69A00C526D8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5047C7E129DAA6BB00C526D8 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				5047C7C929DA9FEF00C526D8 /* ViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		5047C7E229DAA6CD00C526D8 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodDeliveryFastFood/Info.plist;
+				INFOPLIST_FILE = FoodDeliveryFastFood/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -326,7 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodDeliveryFastFood/Info.plist;
+				INFOPLIST_FILE = FoodDeliveryFastFood/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
