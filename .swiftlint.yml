@@ -1,0 +1,184 @@
+#
+# rule identifiers turned on by default to exclude from running
+#
+excluded:
+
+#
+# unwanted rules...
+#
+disabled_rules:
+    - trailing_whitespace # Lines should not have trailing whitespace.
+    - implicit_return # Implicit return should not be a strict rule.
+    - class_delegate_protocol
+    - empty_enum_arguments
+    - implicit_getter
+    - type_name
+    - todo
+
+#
+# some rules are turned off by default, so you can to opt-in
+#
+opt_in_rules:
+- anonymous_argument_in_multiline_closure
+- attributes
+- capture_variable
+- collection_alignment
+- closure_body_length
+- contains_over_filter_count
+- contains_over_filter_is_empty
+- contains_over_first_not_nil
+- contains_over_range_nil_comparison
+- convenience_type
+- discarded_notification_center_observer
+- discouraged_optional_boolean
+- empty_collection_literal
+- empty_count
+- empty_string
+- enum_case_associated_values_count
+- extension_access_modifier
+- fallthrough
+- fatal_error_message
+- file_name_no_space
+- file_types_order # Specifies how the types within a file should be ordered.
+- first_where
+- flatmap_over_map_reduce
+- force_unwrapping
+- function_default_parameter_at_end
+- identical_operands
+- implicitly_unwrapped_optional
+- last_where
+- legacy_multiple
+- legacy_objc_type
+- legacy_random
+- lower_acl_than_parent
+- multiline_arguments
+- multiline_arguments_brackets
+- multiline_function_chains
+- multiline_literal_brackets
+- multiline_parameters
+- multiline_parameters_brackets
+- nslocalizedstring_key
+- overridden_super_call
+- override_in_extension
+- pattern_matching_keywords
+- private_subject
+- prohibited_super_call
+- reduce_into
+- sorted_first_last
+- static_operator
+- switch_case_on_newline
+- trailing_closure
+- type_contents_order # Specifies the order of subtypes, properties, methods & more within a type.
+- unavailable_function
+- unowned_variable_capture
+- unused_declaration
+- yoda_condition
+
+# correctable rules
+- anyobject_protocol
+- array_init
+- closure_end_indentation
+- closure_spacing
+- explicit_init
+- implicit_return
+- joined_default_parameter
+- literal_expression_end_indentation
+- modifier_order
+- operator_usage_whitespace
+- optional_enum_case_matching
+- prefer_self_in_static_references
+- prefer_self_type_over_type_of_self
+- prefer_zero_over_explicit_init
+- redundant_nil_coalescing
+- sorted_imports
+- toggle_bool
+- unneeded_parentheses_in_closure_argument
+- untyped_error_in_catch
+- unused_import
+- vertical_whitespace_closing_braces
+- weak_delegate
+
+#
+# configurable rules can be customized from this configuration file
+#
+anonymous_argument_in_multiline_closure:
+    severity: error
+    
+identifier_name:
+    min_length: 1
+    max_length: 45
+
+type_body_length:
+    warning: 500
+    error: 600
+
+file_length:
+    warning: 500
+    error: 600
+
+line_length:
+    warning: 120
+    error: 140
+    ignores_function_declarations: true
+    ignores_comments: true
+    ignores_urls: true
+    ignores_interpolated_strings: true
+    
+closure_body_length:
+    warning: 250
+    error: 300
+
+function_body_length:
+    warning: 50
+    error: 70
+
+function_parameter_count:
+    warning: 5
+    error: 8
+
+large_tuple:
+    warning: 3
+    error: 3
+
+cyclomatic_complexity:
+    warning: 10
+    error: 40
+
+force_cast:
+    warning
+
+control_statement:
+    error
+
+vertical_parameter_alignment:
+    error
+
+return_arrow_whitespace:
+    error
+
+unneeded_break_in_switch:
+    error
+
+syntactic_sugar:
+    error
+
+redundant_optional_initialization:
+    error
+
+unused_optional_binding:
+    severity: error
+
+nesting:
+    type_level:
+        warning: 3
+        error: 3
+    function_level:
+        error: 0
+
+#
+# Number of accesible warnings (Hard)
+#
+warning_threshold: 3
+
+reporter: xcode
+
